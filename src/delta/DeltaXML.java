@@ -201,9 +201,13 @@ public class DeltaXML {
 					deltaAttr.appendChild(elAttr);
 					Element value1 = elRes.getOwnerDocument().createElement("deltaxml:attributeValue");
 					value1.setAttribute("deltaxml:deltaV2", "A");
+					Text attr1text = value1.getOwnerDocument().createTextNode(attrs1.item(i).getNodeValue());
+					value1.appendChild(attr1text);
 					elAttr.appendChild(value1);
 					Element value2 = elRes.getOwnerDocument().createElement("deltaxml:attributeValue");
 					value2.setAttribute("deltaxml:deltaV2", "B");
+					Text attr2text = value2.getOwnerDocument().createTextNode(attrs2.item(i).getNodeValue());
+					value2.appendChild(attr2text);
 					elAttr.appendChild(value2);
 				}
 			}
