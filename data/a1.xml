@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-	<a>
-		<a1/>
-	</a>
-	<b/>
-	<c>hello world</c>
-	<d/>
-	<f/>
-	<e>Word by Word changes</e>
-</root>
+<XML>
+	<Loan_Contact>Jon</Loan_Contact>
+	<Loan_No>123</Loan_No>
+	<Fee1 type="LunchMoney">10.50</Fee1>
+	<Fee2 id="a1" type="SubwayFare">13.33</Fee2>
+</XML>
