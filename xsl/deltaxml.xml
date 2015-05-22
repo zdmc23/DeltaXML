@@ -1,0 +1,46 @@
+<XML deltaxml:deltaV2="A!=B" xmlns:deltaxml="https://github.com/laurita/DeltaXML" xmlns:dxa="https://github.com/laurita/DeltaXML">
+  <Loan_Contact deltaxml:deltaV2="A!=B">
+    <deltaxml:textGroup deltaxml:deltaV2="A!=B">
+      <deltaxml:text deltaxml:deltaV2="A">
+        Jon
+      </deltaxml:text>
+      <deltaxml:text deltaxml:deltaV2="B">
+        Jane
+      </deltaxml:text>
+    </deltaxml:textGroup>
+  </Loan_Contact>
+  <Loan_No deltaxml:deltaV2="A=B">
+    123
+  </Loan_No>
+  <Fee1 deltaxml:deltaV2="A" type="LunchMoney">
+    10.50
+  </Fee1>
+  <Fee2 deltaxml:deltaV2="A!=B" id="a1" type="SubwayFare">
+    <deltaxml:textGroup deltaxml:deltaV2="A=B">
+      <deltaxml:text deltaxml:deltaV2="A">
+        13.33
+      </deltaxml:text>
+    </deltaxml:textGroup>
+    <deltaxml:attributes deltaxml:deltaV2="A!=B">
+      <dxa:id deltaxml:deltaV2="A!=B">
+        <deltaxml:attributeValue deltaxml:deltaV2="A">
+          a1
+        </deltaxml:attributeValue>
+        <deltaxml:attributeValue deltaxml:deltaV2="B">
+          a2
+        </deltaxml:attributeValue>
+      </dxa:id>
+      <dxa:type deltaxml:deltaV2="A!=B">
+        <deltaxml:attributeValue deltaxml:deltaV2="A">
+          SubwayFare
+        </deltaxml:attributeValue>
+        <deltaxml:attributeValue deltaxml:deltaV2="B">
+          BusFare
+        </deltaxml:attributeValue>
+      </dxa:type>
+    </deltaxml:attributes>
+  </Fee2>
+  <Fee3 deltaxml:deltaV2="B" type="MoreLunchMoney">
+    19.99
+  </Fee3>
+</XML>
