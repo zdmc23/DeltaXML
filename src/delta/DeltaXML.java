@@ -106,6 +106,11 @@ public class DeltaXML {
 		if (el2.hasChildNodes() && el2.getFirstChild().getNodeType() == Document.TEXT_NODE) {
 			if (el1.getFirstChild().getTextContent().equals(el2.getFirstChild().getTextContent())) {
 				txtGr.setAttribute("deltaxml:deltaV2", "A=B");
+				Element txt1 = txtGr.getOwnerDocument().createElement("deltaxml:text");
+				txt1.setAttribute("deltaxml:deltaV2", "A");
+				Text txt1text = txt1.getOwnerDocument().createTextNode(el1.getFirstChild().getTextContent());
+				txt1.appendChild(txt1text);
+				txtGr.appendChild(txt1);
 			} else {
 				txtGr.setAttribute("deltaxml:deltaV2", "A!=B");
 				Element txt1 = txtGr.getOwnerDocument().createElement("deltaxml:text");
